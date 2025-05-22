@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+21. Team
+----------------------------------------------------------------*/
+.cs_team.cs_style_1 {
+  border-radius: 20px;
+  box-shadow: initial;
+  transition: all 0.4s ease;
+  &:hover {
+    box-shadow: 6px 4px 70px 8px rgba(48, 123, 196, 0.09);
+  }
+  .cs_team_meta {
+    padding: 32px 40px;
+    @media (max-width: 1400px) {
+      padding: 32px 20px;
+    }
+  }
+  .cs_member_name {
+    margin-bottom: 7px;
+  }
+  .cs_member_designation {
+    margin-bottom: 9px;
+  }
+  .cs_member_description {
+    margin-bottom: 32px;
+  }
+  
+  .cs_label {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 30px;
+    text-align: center;
+    min-width: 292px;
+    border-radius: 20px 20px 0 0;
+  }
+  &.cs_type_1 {
+    background: #fff;
+    margin-top: 115px;
+    height: initial;
+    padding-top: 1px;
+    .cs_member_img {
+      margin-top: -115px;
+    }
+  }
+  &.cs_type_2 {
+    box-shadow: 0px 4px 21px 1px rgba(48, 123, 196, 0.1);
+    margin-bottom: 0px;
+    .cs_member_name {
+      margin-bottom: 5px;
+    }
+    .cs_member_designation,
+    .cs_member_description {
+      margin-bottom: 28px;
+    }
+    .cs_team_meta {
+      padding: 36px 50px 34px;
+      @media (max-width: 1600px) {
+        padding: 32px 0 10px 0;
+      }
+      @media (max-width: 1400px) {
+        padding: 30px 25px 34px;
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .cs_list_view_wrap {
+    .cs_team.cs_style_1.cs_type_2 {
+      display: flex;
+      .cs_member_img {
+        position: relative;
+        flex: none;
+        width: 450px;
+      }
+      .cs_label {
+        position: initial;
+        width: 100%;
+        transform: initial;
+        border-radius: 0;
+        padding: 12px 15px;
+      }
+      .cs_team_meta {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        padding-right: 30%;
+        @media (max-width: 1700px) {
+          padding-right: 20%;
+        }
+        @media (max-width: 1700px) {
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
