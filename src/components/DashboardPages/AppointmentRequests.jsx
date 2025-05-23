@@ -253,6 +253,7 @@ const styles = {
     fontWeight: '600',
     marginBottom: '40px',
     textAlign: 'center',
+    color: 'white',
   },
   navLink: {
     display: 'block',
